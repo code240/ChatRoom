@@ -20,6 +20,7 @@ const ChatRoom = () => {
   const [isOk, setIsOk] = useState(false);
   const [roomId, setRoomId] = useState("");
 
+  const [scrollFun,setScrollFun] = useState("");
   const [roomDetails, setRoomDetails] = useState({});
   const [userDetails, setUserDetails] = useState([]);
   const [prevSelected,setPrevSelected] = useState("sample");
@@ -88,6 +89,11 @@ const ChatRoom = () => {
         });
     }
   }, [roomId]);
+
+  const scrollBottom = (element) => {
+    element.scroll({ top: element.scrollHeight, behavior: "smooth" });
+  };
+
 
   // fetch message
   useEffect(() => {
@@ -400,8 +406,12 @@ const ChatRoom = () => {
             <textarea
               name="msg"
               id="msg"
+              onFocus={() => scrollBottom(document.getElementById("chats"))}
               value={message4send}
-              onChange={(e) => setMessage4Send(e.target.value)}
+              onChange={(e) => {
+                scrollBottom(document.getElementById("chats"))
+                setMessage4Send(e.target.value)
+              }}
               onKeyDown={handleKeyDown}
               style={{ height: messageBoxHeight }}
               className="message-box"
