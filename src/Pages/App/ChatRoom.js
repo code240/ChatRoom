@@ -405,7 +405,7 @@ const ChatRoom = () => {
               onKeyDown={handleKeyDown}
               style={{ height: messageBoxHeight }}
               className="message-box"
-              placeholder="Type here..."
+              placeholder="Type here...."
             ></textarea>
             <button className="btn btn-primary send-btn" id="sendBtn" onClick={sendMessage}>
               Send
