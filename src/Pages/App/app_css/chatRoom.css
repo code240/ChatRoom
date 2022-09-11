@@ -359,6 +359,7 @@
     background-color: #64b9da;
     background-color: #0099ff;
     background-color: #efefef;
+    word-wrap: break-word;
     /* border: 1px solid red; */
     cursor: pointer;
     padding-left: 1rem;
@@ -413,6 +414,7 @@
     cursor: pointer;
     padding-right: 1rem;
     padding-top: 0.6rem;
+    word-wrap: break-word;
     padding-bottom: 0.6rem;
     height: auto;
     border-radius: 1rem 0rem 1rem 1rem;

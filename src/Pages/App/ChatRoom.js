@@ -170,6 +170,8 @@ const ChatRoom = () => {
     if (message4send.trim().length === 0) {
       return false;
     }
+    document.getElementById("msg").focus();
+    document.getElementById("sendBtn").disabled = true;
     document.getElementById(replyTO).style.border = "0px";
     axios
       .post(`${API}/API/SendMessage`, {
@@ -187,6 +189,8 @@ const ChatRoom = () => {
             setMessage4Send("");
             setMessageBoxHeight("2.5rem");
             setReplyTo(0);
+            document.getElementById("msg").focus();
+            document.getElementById("sendBtn").disabled = false; 
           }
         }
       })
@@ -403,7 +407,7 @@ const ChatRoom = () => {
               className="message-box"
               placeholder="Type here..."
             ></textarea>
-            <button className="btn btn-primary send-btn" onClick={sendMessage}>
+            <button className="btn btn-primary send-btn" id="sendBtn" onClick={sendMessage}>
               Send
             </button>
           </div>
