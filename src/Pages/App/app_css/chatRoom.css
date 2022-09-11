@@ -1,0 +1,800 @@
+#sample{
+    height: 0;
+    width: 0;
+    display: none;
+}
+#0{
+    height: 0;
+    width: 0;
+    display: none;
+}
+.chatRoom-mainScreen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #e5e3de;
+}
+.upperSide{
+    height: 7.5rem;
+    background-color: #648dda;
+    background-color: #00a884;
+    background-color: #64b9da;
+}
+.mainFixed-chatScreen{
+    position: fixed;
+    height: 95%;
+    width: 97.5%;
+    top: 2.5%;
+    left: 1.25%;
+    background-color: #fff;
+    z-index: 20;
+}
+.left-ChatScreen{
+    width: 30%;
+    height: 100%;
+    float: left;
+    /* border: 1px solid red; */
+    /* box-shadow: 0px 0px 5px #eee; */
+    border-right: 1px solid rgb(180, 180, 180);
+    overflow: auto;
+    padding-bottom: 3rem;
+    scrollbar-width: 0;
+}
+.left-ChatScreen::-webkit-scrollbar{
+    display: none;
+}
+.right-chatScreen{
+    width: 70%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+    background-color: #003193;
+    /* border: 1px solid blue; */
+}
+
+.chatScreen-header{
+    background-color: #f0f2f5;
+    height: 3.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+
+}
+.chatSection{
+    /* border: 4px solid red; */
+    height:90%;
+    width: 100%;
+    padding-top: 4rem;
+    overflow: auto;
+    padding-bottom: 4.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    scrollbar-width: none;
+}
+.chatSection::-webkit-scrollbar{
+    display: none;
+}
+.chatScreen-inputArea{
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+    height: auto;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    background-color: #f0f2f5;
+    /* background-color: #b3b3b3; */
+}
+.message-box{
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    resize: none;
+    padding-top: 7px;
+    float: left;
+}
+.message-box:focus{
+    outline: 0;
+}
+.send-btn{
+    padding: 0.5rem;
+    float: left;
+    display: block;
+    margin-left: 0.5rem;
+    color: #fff;
+    border: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    background-color: #469abc;
+    /* background-color: #6464da; */
+}
+
+/* Layout complete */
+
+
+.leftHeader{
+    height: 3.5rem;
+    background-color: #f0f2f5;
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #6464da;
+    
+}
+.forRoomInfo-left{
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 1.2rem;
+    padding-left: 2rem;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding-bottom: 1.2rem;
+}
+.for-dp-inLeftRoomInfo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    float: left;
+
+}
+.avtarIconInChatScreen{
+    max-width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.for-detailOfRoom-left{
+    height: 5rem;
+    width: 15rem;
+    padding-left: 1.4rem;
+    float: left;
+    padding-top: 0.8rem;
+    /* border: 1px solid red; */
+}
+.roomName-inLeftChatScreen{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.roomid-inChatScreen{
+    color: rgb(148, 148, 148);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.roomid-text{
+    color: red;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #f0f2ff;
+    padding: 2px;
+    padding-left: 8px;
+    border-radius: 10px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+.bottomPart-leftChatScreen{
+    /* border: 1px solid red; */
+    height: auto;
+
+}
+.members-heading{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 1rem;
+    text-align: center;
+    color: #3e3e3e;
+    font-weight: 400;
+}
+.personDiv{
+    width: 90%;
+    /* border: 1px solid #999; */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 4rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #f5f3f0;
+    background-color: #ebffe6;
+}
+.userDp-chatScreen{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: #e8e8e8;
+    overflow: hidden;
+    float: left;
+}
+.userIMG-chatScreen{
+    max-width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.aboutUser-chatScreen{
+    float: left;
+    width: 74%;
+    padding-left: 1rem;
+    height: 3rem;
+    /* border: 1px solid red; */
+}
+.userName-chatScreen{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.userEmail-chatScreen{
+    margin-top: -0.1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: rgb(157, 157, 157);
+}
+
+
+
+
+
+
+
+
+/* right side */
+.backbtnDiv{
+    width: 2.5rem;
+    height: 100%;
+    float: left;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: right;
+    padding-top: 0.3rem;
+
+    /* border: 1px solid red; */
+}
+.roomDP-rightHeader{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    background-color: #00a884;
+    float: left;
+
+}
+.roomAvtar-rightSide{
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.roomDetail-rightSide{
+    float: left;
+    padding-left: 1rem;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.roomName-rightTop{
+    padding-top: 0rem;
+    font-weight: 400;
+}
+.otherNames{
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 0.7rem;
+    margin-top: -0.1rem;
+}
+.roomDetail-icon{
+    display: block;
+    width: fit-content;
+    margin-right: 2rem;
+    float: right;
+    padding-top: 0.4rem;
+    color: #787878;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* display: none; */
+}
+
+
+
+
+/* message boxs */
+
+.chatSection{
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    background:linear-gradient(rgba(86, 86, 86, 0.1),rgba(107, 107, 107, 0.1)),url("https://static-prod.adweek.com/wp-content/uploads/2022/03/Messenger-Lo-Fi-Theme-Hero-652x367.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+.constant-heading{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    padding: 0.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.opponent-msg{
+    width: 100%;
+    height: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    /* border: 1px solid red; */
+}
+.opponent-dp-div{
+    width: 3rem;
+    height: 3rem;
+    /* border: 1px solid black; */
+    border-radius: 3rem;
+    float: left;
+    overflow: hidden;
+}
+.opponent-avtar{
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.opponent-msg-bubble{
+    width: auto;
+    max-width: 45%;
+    min-width: 10%;
+    height: auto;
+    background-color: #64b9da;
+    background-color: #0099ff;
+    background-color: #efefef;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: left;
+    margin-left: 0.7rem;
+    border-radius: 0rem 1rem 1rem 1rem;
+}
+
+.nameOnMsgBubble{
+    font-size: 0.7rem;
+    margin-bottom: 0;
+   
+    padding-top: 0.25rem;
+   
+    color: #757575;
+    padding-bottom: 0.4rem;
+    /* line-height: 0.8rem; */
+    /* border: 1px solid red; */
+
+    font-weight: 400;
+}
+.opponent-msgText{
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0;
+    padding-bottom: 0.6rem;
+    color: #333;
+    /* border: 1px solid red; */
+}
+
+
+
+/* my msg */
+.my-msg{    
+    width: 100%;
+    height: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 3rem;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.my-msg-bubble{
+    width: auto;
+    max-width: 45%;
+    min-width: 10%;
+    padding-left: 1rem;
+    cursor: pointer;
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    height: auto;
+    border-radius: 1rem 0rem 1rem 1rem;
+    background-color: #0099ff;
+    background-color: #7E23B4;
+    background-color: #1365e1;
+    float: right;
+}
+.my-msgText{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.90rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    
+    color: #f1f3ff;
+    /* border: 1px solid red; */
+}
+
+
+
+
+/* reply divs */
+.OppponentReplyOn-div{
+    height: auto;
+    max-height: 4.65rem;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-left: 3px solid #0099ff;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 0.7rem;
+    padding-left: 0.35rem;
+    padding-top: 0.35rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.35rem;
+}
+.OpponentReplyTo{
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #0099ff;
+    padding-bottom: 0.4rem;
+    font-weight: 400;
+}
+.OpponentReplyOnMessage{
+    margin: 0;
+    font-size: 0.8rem;
+    color: #767676;
+    font-weight: 500;
+}
+
+
+.MyReplyOn-div{
+    height: auto;
+    max-height: 4.65rem;
+    overflow: hidden;
+    background-color: #0099ff;
+    background-color: #38acff;
+    background-color: #3c88fa;
+    border-left: 3px solid #d5d5d5;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    border-radius: 4px;
+    margin-bottom: 0.7rem;
+    padding-left: 0.35rem;
+    padding-top: 0.35rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.35rem;
+}
+.MyReplyTo{
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #0099ff;
+    color: #fff;
+    padding-bottom: 0.4rem;
+    font-weight: 400;
+}
+.MyReplyOnMessage{
+    margin: 0;
+    font-size: 0.8rem;
+    color: #e6e6e6;
+    font-weight: 500;
+}
+
+
+
+
+.seendot{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    bottom: 0.1rem;
+    background-color: #ff0000;
+    right: 2.7rem;
+    right: 0.1rem;
+    border-radius: 1rem;
+}
+
+
+
+#detail{
+    display: none;
+}
+#cross{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:1350px){
+    .for-detailOfRoom-left{
+        width: 12rem;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width:1350px){
+    
+    /* Layout Change */
+
+    .left-ChatScreen{
+        width: 35%;
+    }
+    .right-chatScreen{
+        width: 65%;
+    }
+    .chatScreen-inputArea{
+        width: 65%;
+    }
+
+    
+    /* content change */
+
+    
+    .forRoomInfo-left{
+        padding-left: 0.5rem; 
+        padding-top: 1rem;
+    }
+    .for-detailOfRoom-left{
+        width: 10rem;
+        padding-left: 0.5rem;
+    }
+    .roomName-inLeftChatScreen{
+        font-size: 1rem;
+    }
+    .roomid-inChatScreen{
+        font-size: 0.9rem;
+    }
+        
+}
+
+@media screen and (max-width:1000px){
+    
+    /* Layout Change */
+
+    .left-ChatScreen{
+        width: 40%;
+    }
+    .right-chatScreen{
+        width: 60%;
+    }
+    .chatScreen-inputArea{
+        width: 60%;
+    }
+
+
+    .my-msg{    
+        padding-right: 0.5rem;
+    }
+    .my-msg-bubble{
+        max-width: 60%;
+    }
+    .opponent-msg-bubble{
+        max-width: 60%;
+    }
+}
+
+
+
+@media screen and (max-width:800px){
+    
+    /* Layout Change */
+
+    .mainFixed-chatScreen{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top:0;
+    }
+
+    .left-ChatScreen{
+        width: 60%;
+        z-index: 100;
+        height: 100%;
+        left: 0;
+        top:0;
+        background-color: #fff;
+        position: fixed;
+        display: none;
+    }
+    .right-chatScreen{
+        width: 100%;
+        overflow: hidden;
+    }
+    .chatScreen-inputArea{
+        width: 100%;
+    }
+
+    #detail{
+        display: block;
+    }
+
+    .my-msg{    
+        padding-right: 0.5rem;
+    }
+    .my-msg-bubble{
+        max-width: 60%;
+    }
+    .opponent-msg-bubble{
+        max-width: 60%;
+    }
+}
+@media screen and (max-width:620px) {
+    .left-ChatScreen{
+        display: none;
+        width: 80%;
+    }
+    .for-detailOfRoom-left{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .left-ChatScreen{
+        display: none;
+        width: 85%;
+    }
+    .for-dp-inLeftRoomInfo{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .for-detailOfRoom-left{
+        width: 14rem;
+    }
+    .right-chatScreen{
+        background-color:#0053b9;
+        background-color: rgb(0, 83, 155);
+        border-bottom: 1px solid rgb(221, 221, 221);
+        user-select: none
+    }
+    .chatScreen-header{
+        background-color: #0072fe;
+        background-color: #1365e1;
+    }
+    
+    .chatScreen-inputArea{
+        background-color: #0072fe;
+        background-color: #f2f2f2;
+        border-top: 1px solid #dedede;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        height: auto;
+    }
+    .message-box{
+        width: 75%;
+        background-color: #bee3fe;
+        background-color: #f2f2f2;
+    }
+    .send-btn{
+        background-color: #0053b9;
+    }
+    .chatSection{   
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        /* background:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("https://preview.redd.it/znalhai8daq81.jpg?auto=webp&s=2c941d93c317e338c7289ab2f50488519af5d46f"); */
+        /* background:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("https://static-prod.adweek.com/wp-content/uploads/2022/03/Messenger-Lo-Fi-Theme-Hero-1284x680.png"); */
+        background-size: cover;
+        padding-bottom: 6rem;
+        /* background: rgb(255, 255, 255); */
+    }
+    .roomDetail-icon{
+        color: rgb(255, 255, 255);
+    }
+    .roomName-rightTop{
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+    }
+    .otherNames{
+        color: rgb(255, 255, 255);
+    }
+    .constant-heading{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .opponent-dp-div{
+        width: 2rem;
+        height: 2rem;
+    }
+    .opponent-msg-bubble{   
+        max-width: 70%;
+        min-width: 40%;
+        margin-left: 0.4rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .my-msg{
+        padding-right: 0.25rem;
+    }
+    .opponent-msgText{
+        font-size: 1rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+    
+    .OpponentReplyTo{
+        font-size: 0.8rem;
+    }
+    .OpponentReplyOnMessage{
+        font-size: 0.9rem;
+    }
+    .my-msgText{
+        font-size: 1rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+    .my-msg-bubble{
+        max-width: 70%;
+        min-width: 40%;
+        padding-left: 0.5rem;
+        background-color: #1365e1;
+        padding-right: 0.5rem;
+    }
+    .MyReplyOn-div{
+        background-color: #3c88fa;
+    }
+    .MyReplyTo{
+        font-size: 0.8rem;
+    }
+    .MyReplyOnMessage{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:420px){
+    
+    .left-ChatScreen{
+        display: none;
+        width: 85%;
+    }
+    .forRoomInfo-left{
+        /* border: 1px solid red; */
+        padding-bottom: 0;
+        padding-top: 1.4rem;
+    }
+    .for-dp-inLeftRoomInfo{
+        width: 4rem;
+        height: 4rem;
+        float: none;
+        margin: 0 auto;
+    }
+    .for-detailOfRoom-left{
+        width: fit-content;
+        margin: 0 auto;
+        float: none;
+    }
+    .roomName-inLeftChatScreen{
+        /* border: 1px solid red; */
+        text-align: center;
+    }
+    .roomid-inChatScreen{
+        /* border: 1px solid red; */
+        text-align: center;
+    }
+}

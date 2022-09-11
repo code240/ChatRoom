@@ -1,0 +1,239 @@
+
+.main-body{
+    /* background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('https://cdn.w600.comps.canstockphoto.com/social-media-doodle-seamless-pattern-vector-clipart_csp74798209.jpg'); */
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.header-1{
+    padding: 0;
+    height: auto;
+    padding-bottom: 0rem;
+    /* background-color: #6464da; */
+    box-shadow: 0px 0px 10px #eee;
+    background-color: #fff;
+    position: sticky;
+    top: -1px;
+    z-index: 25;
+}
+.brandname-1{
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    user-select: none;
+    font-size: 2.4rem;
+    width: fit-content;
+    margin: 0 auto;
+    color: #000000;
+    color: #6464da;
+    /* color: #007CFF; */
+    /* color: #fff; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+
+}
+.main-activity{
+    background-color: #fff;
+}
+.right-part{
+    height: 26rem;
+    width: 26rem;
+    /* border: 1px solid red; */
+}
+.main-img{
+    max-width: 100%;
+    height: 100%;
+}
+.buttons-div{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    user-select: none;
+}
+.left-button{
+    float: left;
+    width: 10rem;
+    text-align: center;
+    padding: 0.6rem;
+    background-color: #eee;
+    border-radius: 20px 0px 0px 20px;
+    font-weight: 500;
+}
+.mid-button{
+    float: left;
+    width: 10rem;
+    text-align: center;
+    padding: 0.6rem;
+    background-color: #eee;
+    border-radius: 0px 0px 0px 0px;
+    font-weight: 500;
+}
+.right-button{
+    float: right;
+    width: 10rem;
+    text-align: center;
+    padding: 0.6rem;
+    font-weight: 500;
+    background-color: #eee;
+    border-radius: 0px 20px 20px 0px;
+}
+.nav-btn{
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background-color: #e8e8e8;
+}
+.active{
+    color: #ca0040;
+}
+.main-for-rooms{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    margin-top: 3rem;
+    /* border: 1px solid red; */
+    justify-content: center;
+    padding-bottom: 0rem;
+}
+.logout-btn{
+    padding: 8px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #fff;
+    background-color: #ff4f5a;
+    border: 0;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+
+
+.if-no-room{
+    width: auto;
+    height: 23rem;
+    margin-top:4rem;
+}
+.if-no-room-heading{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #666;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+.get-room-heading{
+    color: green;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+.getRoom-btn{
+    padding: 8px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: #fff;
+    background-color: #6464da;
+    border: 0;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}
+.hr-line1{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .main-for-rooms{
+        width: 90%;
+        margin-top: 1rem;
+        padding-top: 0;
+    }
+    .left-button{
+        width: 8rem;
+    }
+    .mid-button{
+        width: 8rem;
+    }
+    .right-button{
+        width: 8rem;
+    }
+    .getRoom-btn{
+        margin-bottom: 6rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .main-body{
+        padding-top: 6rem;
+    }
+    .header-1{
+        background-color: #ffffff;
+        /* border: 1px solid red; */
+        position: fixed;
+        width: 100%;
+        left: 0;
+        height: 4.2rem;
+        box-shadow: 0 0 0 #fff;
+    }
+    .brandname-1{
+        padding-top: 1rem;
+        padding-bottom: 0.1rem;
+    }
+    .buttons-div{
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        background-color: #fff;
+        padding: 0;
+        z-index: 10;
+        border-bottom: 1px solid rgb(184, 184, 184);
+    }
+    .left-button{
+        width: 33.33%;
+        border-radius: 0;
+        background-color: inherit;
+    }
+    .mid-button{
+        width: 33.33%;
+    }
+    .right-button{
+        width: 33.33%;
+        border-radius: 0;
+        background-color: inherit;
+    }
+    .main-for-rooms{
+        width: 95%;
+        padding-top: 1rem;
+        justify-content: center;
+
+    }
+    .getRoom-btn{
+        margin-bottom: 4rem;
+    }
+    .hr-line1{
+        display: none;
+    }
+    
+}
+
+
+
