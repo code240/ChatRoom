@@ -48,7 +48,8 @@ const Register = () => {
             username : valid.username,
             useremail : valid.useremail,
             usermobile : valid.usermobile,
-            userpassword : valid.userpassword
+            userpassword : valid.userpassword,
+            useravtar : "none.png"
         }).then((response) => {
             if(response.data.error === true){
                 if(response.data.errorType === 'API_KEY'){

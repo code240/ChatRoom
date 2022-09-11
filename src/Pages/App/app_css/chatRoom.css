@@ -253,7 +253,7 @@
     width: 2.5rem;
     height: 100%;
     float: left;
-    color: #fff;
+    color: #000;
     font-size: 1.3rem;
     text-align: right;
     padding-top: 0.3rem;
@@ -651,6 +651,9 @@
 }
 
 @media screen and (max-width:500px){
+    .backbtnDiv{
+        color: #fff;
+    }
     .left-ChatScreen{
         display: none;
         width: 85%;
