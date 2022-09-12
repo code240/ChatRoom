@@ -38,7 +38,8 @@ const Home = () => {
   },[isOk]); 
 
   const logout = () => {
-    cookies.remove("chatroom_uid");
+    cookies.remove("chatroom_uid", { path: '/' });
+    // history.push("/");
     window.location.reload(false); 
   }
 
