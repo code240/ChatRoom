@@ -118,7 +118,7 @@ const ChatRoom = () => {
         if (prevMessages.length < messages.length) {
           scrollBottom(document.getElementById("chats"));
           // play();
-          window.navigator.vibrate(120);
+          // window.navigator.vibrate(120);
 
         }
 
