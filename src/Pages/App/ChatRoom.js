@@ -117,7 +117,9 @@ const ChatRoom = () => {
         setMessages(response.data.message);
         if (prevMessages.length < messages.length) {
           scrollBottom(document.getElementById("chats"));
-          play();
+          // play();
+          window.navigator.vibrate(120);
+
         }
 
         if (messageTimer < 3) {
@@ -202,6 +204,7 @@ const ChatRoom = () => {
       })
       .catch((error) => {
         alert("cannot connect with server!");
+        document.getElementById("sendBtn").disabled = false;
         console.log(error);
       });
   };
